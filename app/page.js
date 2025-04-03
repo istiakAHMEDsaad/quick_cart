@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import HeaderSlider from '@/components/HeaderSlider';
 import HomeProducts from '@/components/HomeProducts';
 import Navbar from '@/components/Navbar';
+import NewsLetter from '@/components/NewsLetter';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HomeProducts />
         <FeaturedProduct />
         <Banner />
+        <NewsLetter/>
       </div>
       <Footer />
     </>
