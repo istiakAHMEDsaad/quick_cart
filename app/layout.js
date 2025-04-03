@@ -8,6 +8,12 @@ const outfit = Outfit({
   weight: ['300', '400', '500'],
 });
 
+export const metadata = {
+  title: 'QuickShop',
+  description:
+    'Simple E-Commerce web application made by NextJS, which is practice project of course, tutorial by GreatStack',
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
