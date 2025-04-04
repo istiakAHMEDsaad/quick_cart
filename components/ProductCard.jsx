@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
     <div
       className='flex flex-col items-start gap-0.5 max-w-[200px] w-full cursor-pointer'
       onClick={() => {
-        router.push('/product' + product._id);
+        router.push('/product/' + product._id);
         scrollTo(0, 0);
       }}
     >
