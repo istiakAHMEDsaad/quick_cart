@@ -133,7 +133,7 @@ const Product = () => {
                   addToCart(productData._id);
                   router.push('/cart');
                 }}
-                className='w-full py-3.5 bg-orange-500 text-white hover:bg-orange-600 transition'
+                className='w-full py-3.5 bg-blue-500 text-white hover:bg-blue-600 transition'
               >
                 Buy now
               </button>
