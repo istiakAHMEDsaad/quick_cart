@@ -2,6 +2,7 @@
 import { productsDummyData, userDummyData } from '@/assets/assets';
 import { useRouter } from 'next/navigation';
 import { createContext, useContext, useEffect, useState } from 'react';
+import { useUser } from '@clerk/nextjs';
 
 export const AppContext = createContext();
 
@@ -17,6 +18,8 @@ export const AppContextProvider = (props) => {
   const [userData, setUserData] = useState(false);
   const [isSeller, setIsSeller] = useState(true);
   const [cartItems, setCartItems] = useState({});
+
+  const {user} = useUser();
 
   const fetchProductData = async () => {
     setProducts(productsDummyData);
@@ -76,6 +79,7 @@ export const AppContextProvider = (props) => {
   }, []);
 
   const value = {
+    user,
     currency,
     router,
     isSeller,
