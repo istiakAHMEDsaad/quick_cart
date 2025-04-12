@@ -1,4 +1,5 @@
 'use client';
+
 import Banner from '@/components/Banner';
 import FeaturedProduct from '@/components/FeaturedProduct';
 import Footer from '@/components/Footer';
@@ -15,7 +16,7 @@ export default function Home() {
         <HeaderSlider />
         <HomeProducts />
         <FeaturedProduct />
-        <Banner />
+        <Banner/>
         <NewsLetter/>
       </div>
       <Footer />
